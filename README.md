@@ -1,36 +1,37 @@
 # 19CS301-Module-4
-ExNo.4a DICTIONARY- SIZE OF DICTIONARY
+ExNo.4a DICTIONARY- MERGE THE DICTIONARY
 ### AIM
-To write a  python program to print the size of dictionary using getsizeof() from sys module.
+To write a  python program to merge the two python dictionaries into one
 ### ALGORITHM
 
-Step 1:	 Begin the program.
+Step 1:	Start the program.
 
-Step 2:	  Import the sys module to access the getsizeof() function.
+Step 2:	Define the first dictionary dict1 with some key-value pairs.
 
-Step 3:	 Define dictionaries with necessary values.
+Step 3:	Define the second dictionary dict2 with additional key-value pairs.
 
-Step 4:	 Use sys.getsizeof(dic1) to get the size of dic1,dic2,dic3.
+Step 4:	Use dictionary unpacking ({**dict1, **dict2}) to merge both dictionaries:
 
-Step 5:	  Print the size value of dic1, dic2,dic3.
+Step 5:	All key-value pairs from dict1 are included.
 
-Step 6:	 Terminate the program.
+Step 6:	If a key appears in both dictionaries (like 'Thirty'), the value from dict2 will overwrite the one from dict1.
+
+Step 7:	Print the resulting merged dictionary.
+
+Step 8:	End the program.
 
 ### PROGRAM
-```import sys
-dic1 = {"A": 1, "B": 2, "C": 3}
-dic2 = {"Geek1": "Raju", "Geek2": "Nikhil", "Geek3": "Deepanshu"}
-dic3 = {1: "Lion", 2: "Tiger", 3: "Fox", 4: "Wolf"}
-print(f"Size of dic1: {sys.getsizeof(dic1)}bytes")
-print(f"Size of dic2: {sys.getsizeof(dic2)}bytes")
-print(f"Size of dic3: {sys.getsizeof(dic3)}bytes")
+```
+dict1 = {'Ten': 10, 'Twenty': 20, 'Thirty': 30}
+dict2 = {'Thirty': 30, 'Fourty': 40, 'Fifty': 50}
+print({**dict1,**dict2})
 ```
 ### OUTPUT
 ![image](https://github.com/user-attachments/assets/c04d58b1-b6a9-4753-a88e-db8914bc73c6)
 
  
 ### RESULT
-Thus the python program for printing a size of dictionary, was implemented and executed successfully.
+Thus the python program for  to merge the two python dictionaries into one was implemented and executed successfully.
 
 Exp.No:4(b)	EXCEPTION- EXCEPTION HANDLING
 ### AIM

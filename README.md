@@ -210,7 +210,7 @@ while choice!=0:
         
 ```
 ### OUTPUT
-![image](https://github.com/user-attachments/assets/a3851f8f-c387-41ea-81b1-5806c381d653)
+![image](https://github.com/23013357/19CS301-Module-4/blob/main/jj.png)
  
 ### RESULT
 Thus the arithmetic calculation using class has been  implemented and executed successfully.

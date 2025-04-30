@@ -27,7 +27,7 @@ dict2 = {'Thirty': 30, 'Fourty': 40, 'Fifty': 50}
 print({**dict1,**dict2})
 ```
 ### OUTPUT
-![image](https://github.com/user-attachments/assets/c04d58b1-b6a9-4753-a88e-db8914bc73c6)
+![image](https://github.com/23013357/19CS301-Module-4/blob/main/gg.png)
 
  
 ### RESULT

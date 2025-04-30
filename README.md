@@ -155,8 +155,8 @@ Thus the python program for calculating the area of a circle was implemented and
 Exp.No:4(e)	SEB- ARITHMETIC CALCULATION USING CLASS
 
 ### AIM
-To write a python program to perform addition and division operation using class and if,elif..
-class name should be saveetha, function name should be setvalues( to set a and b values) add and div.cases : choice 1 ->perform addition ,choice 2-> perform division ,  choice 0 -> exiting, other choices -> print 'invalid choice'
+To write a python program to perform multiplication and division operation using class and if,elif..
+class name should be saveetha, function name should be setvalues( to set a and b values) add and div.cases : choice 1 ->perform multiplication ,choice 2-> perform division ,  choice 0 -> exiting, other choices -> print 'invalid choice'
 ### ALGORITHM
 
 Step 1:	 Begin the program.
@@ -169,7 +169,7 @@ Step 4:	 Set the values of a and b using the setvalues(a, b) method of the Savee
 
 Step 5:	 Start a while True loop to repeatedly ask the user for a choice. 
 
-Step 6:	 Take the user's choice (1 for addition, 2 for division, 0 for exit).
+Step 6:	 Take the user's choice (1 for multiplication, 2 for division, 0 for exit).
 
 Step 7:	 If the choice is 1, call the add() method and print the result (converted to an integer).
 
@@ -181,44 +181,33 @@ Step 10:	 If the choice is not 1, 2, or 0, print "Invalid choice"
 
 Step 11:	   Terminate the program.
 ### PROGRAM
-```class Saveetha:
-    def __init__(self):
-        self.a = 0
-        self.b = 0
-
-    def setvalues(self, a, b):
-        self.a = a
-        self.b = b
-
-    def add(self):
-        return self.a + self.b
-
-    def div(self):
-        if self.b != 0:
-            return self.a / self.b
-        else:
-            return "Error: Division by zero"
-def main():
-    saveetha_obj = Saveetha()
-    a = float(input())``
-    b = float(input())
-    while True:
-        saveetha_obj.setvalues(a, b)
-        choice = int(input())
-        if choice == 1:
-            result = saveetha_obj.add()
-            print(f"Result:  {int(result)}")
-        elif choice == 2:
-            result = saveetha_obj.div()
-            print(f"Result:  {int(result)}")
-        elif choice == 0:
-            print("Exiting!")
-            break
-        else:
-            print("Invalid choice")
-
-# Run the main function
-main()
+```
+class Saveetha:
+    def __init__(self,a,b):
+        self.a=a
+        self.b=b
+        
+    def mul(self):
+        return self.a*self.b
+        
+    def fd(self):
+        return self.a//self.b
+    
+a=int(input())
+b=int(input())
+obj=Saveetha(a,b)
+choice=1
+while choice!=0:
+    choice=int(input())
+    if choice==1:
+        print("Result: ",obj.mul())
+    elif choice==2:
+        print("Result: ",obj.fd())
+    elif choice==0:
+        print("Exiting!")
+    else:
+        print("Invalid choice!")
+        
 ```
 ### OUTPUT
 ![image](https://github.com/user-attachments/assets/a3851f8f-c387-41ea-81b1-5806c381d653)

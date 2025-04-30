@@ -60,7 +60,7 @@ except ValueError:
     print("Enter only Number.")
 ```
 ### OUTPUT
- ![image](https://github.com/user-attachments/assets/86726500-ef3e-4a14-a878-cb7b5c0886c5)
+ ![image](https://github.com/23013357/19CS301-Module-4/blob/main/hh.png)
 
 ### RESULT
 Thus the python program for handling exceptions was implemented and executed successfully.
